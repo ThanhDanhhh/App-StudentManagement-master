@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp">
+
+        <TextView
+            android:id="@+id/btnTheloai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:background="@drawable/btn_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Quản lý sinh viên"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/edt_ten_sv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_signin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_bocong"
+            android:backgroundTint="#FF5722"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Tên sinh viên"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+        <EditText
+            android:id="@+id/edt_ma_sv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_signin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_bocong"
+            android:backgroundTint="#FF5722"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="MSSV"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+        <EditText
+            android:id="@+id/edt_nganh_sv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_signin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_bocong"
+            android:backgroundTint="#FF5722"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Ngành học"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_signin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FF5722"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Ngành học"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"
+            android:textColorHint="#fff" >
+
+            <TextView
+                android:layout_width="92dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edt_bocong"
+                android:backgroundTint="#FF5722"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Lớp"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+            <Spinner
+                android:id="@+id/sp_lop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_signin"
+                android:backgroundTint="#FF5722"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Ngành học"
+
+                android:inputType="textEmailAddress"
+                android:spinnerMode="dialog"
+                android:textColor="#000"
+                android:textColorHint="#fff" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+            <Button
+                android:id="@+id/btn_huy_sv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#9A9595"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginRight="20dp"
+                android:text="Huy"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_them_sv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_custom"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Them"
+                android:textColor="@android:color/white" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
